@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
 	let dump_location = document.getElementById("dump-location").value
 	console.log(email, phone, address_location, dump_location)
 
-	fetch("72.227.237.196:25565", {
+	fetch("72.227.237.196:25565/subscribe", {
 		method: "POST",
 		body: JSON.stringify({ email: email, phone: phone, address_location: address_location, dump_location: dump_location }),
 	})
